@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>GBASIMET Games</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial;
+    text-align:center;
+    background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color:white;
+}
+
+h1{
+    margin-top:30px;
+}
+
+.game-container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap:20px;
+    padding:30px;
+}
+
+button{
+    padding:20px;
+    font-size:16px;
+    border:none;
+    border-radius:12px;
+    cursor:pointer;
+    background:#ff9800;
+    color:white;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#ff5722;
+    transform:scale(1.05);
+}
+
+.back{
+    background:#4CAF50;
+    margin-bottom:20px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>🎮 GBASIMET GAME CENTER</h1>
+
+<button class="back" onclick="location.href='index.html'">⬅ Back Home</button>
+
+<div class="game-container">
+
+<button onclick="openGame('xoxo.html')">X & O (Hard AI)</button>
+
+<button onclick="openGame('snake.html')">Snake Game</button>
+
+<button onclick="openGame('memory.html')">Memory Game</button>
+
+<button onclick="openGame('quiz.html')">Quiz Game</button>
+
+<button onclick="openGame('sliding.html')">Sliding Puzzle</button>
+
+<button onclick="openGame('2048.html')">2048 Game</button>
+
+<button onclick="openGame('typing.html')">Typing Speed</button>
+
+<button onclick="openGame('math.html')">Math Challenge</button>
+
+<button onclick="openGame('colormatch.html')">Color Match</button>
+
+<button onclick="openGame('reaction.html')">Reaction Test</button>
+
+</div>
+
+<script>
+function openGame(gameFile){
+    window.location.href = gameFile;
+}
+</script>
+
+</body>
+</html>
